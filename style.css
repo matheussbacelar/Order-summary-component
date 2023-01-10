@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;800&display=swap');*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container
+{
+    position: absolute;
+    background-color: white;
+    max-width: 416px;
+    border-radius: 1rem;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+    overflow: hidden;
+}
+.img img
+{
+    width: 100%;
+    
+}
+.card-content
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+    padding: 0 3rem;
+    height: 100%;
+    width: 100%;
+}
+.card-content h1
+{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: hsl(223, 47%, 23%);
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+.card-content .descrition
+{
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    
+}
+.card-content .plan
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 1rem;
+    padding: 1.5rem 1rem;
+    margin: 2rem 2rem;
+    width: 100%;
+}
+.card-content .plan .music-prices
+{
+    display: flex;
+    align-items: center;
+}
+.card-content .plan .prices
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+.plan img
+{
+    width: 3rem;
+}
+.card-content .plan .prices span
+{
+    color: hsl(224, 23%, 55%);
+}
+.card-content .plan a
+{
+    font-size: 0.8em;
+    font-weight: 900;
+    color: hsl(245, 75%, 52%);
+
+}
+.card-content .plan a:hover
+{
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+.buttons
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.buttons .button-proceed
+{
+    cursor: pointer;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 900;
+    border: none;
+    width: 100%;
+    border-radius: 0.6rem;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.2);
+    transition: background 0.3s;
+}
+.buttons .button-proceed:hover
+{
+    background-color: #766cf1;
+}
+.buttons .button-cancel
+{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 0.9em;
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 2.5rem;
+    transition: color 0.3s;
+}
+.buttons .button-cancel:hover
+{
+    color: hsl(223, 47%, 23%);
+}
+.music-prices .prices p
+{
+    font-weight: 900;
+}
+@media screen and (max-width: 650px) {
+    body {
+      background: url(images/pattern-background-mobile.svg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-color: hsl(225, 100%, 94%);
+    }
+  }
+  
+  @media screen and (max-width: 980px) {
+    .card-content {
+      padding: 0 3rem;
+    }
+  }
+
