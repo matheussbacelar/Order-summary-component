@@ -11,14 +11,13 @@ body
     background-repeat: no-repeat;
     background-size: contain;
     background-color: hsl(225, 100%, 94%);
-    width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.container
+main
 {
     position: absolute;
     background-color: white;
@@ -32,7 +31,7 @@ body
     width: 100%;
     
 }
-.card-content
+main .card-content
 {
     display: flex;
     align-items: center;
@@ -42,7 +41,7 @@ body
     height: 100%;
     width: 100%;
 }
-.card-content h1
+main .card-content h1
 {
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -50,7 +49,7 @@ body
     font-size: 1.8rem;
     font-weight: 900;
 }
-.card-content .descrition
+main .card-content .descrition
 {
     font-size: 16px;
     font-weight: 500;
@@ -58,7 +57,7 @@ body
     text-align: center;
     
 }
-.card-content .plan
+main .card-content .plan
 {
     display: flex;
     align-items: center;
@@ -69,38 +68,38 @@ body
     margin: 2rem 2rem;
     width: 100%;
 }
-.card-content .plan .music-prices
+main .card-content .plan .music-prices
 {
     display: flex;
     align-items: center;
 }
-.card-content .plan .prices
+main .card-content .plan .prices
 {
     display: flex;
     flex-direction: column;
     margin-left: 1rem;
 }
-.plan img
+main .plan img
 {
     width: 3rem;
 }
-.card-content .plan .prices span
+main .card-content .plan .prices span
 {
     color: hsl(224, 23%, 55%);
 }
-.card-content .plan a
+main .card-content .plan a
 {
     font-size: 0.8em;
     font-weight: 900;
     color: hsl(245, 75%, 52%);
 
 }
-.card-content .plan a:hover
+main .card-content .plan a:hover
 {
     color: hsl(224, 23%, 55%);
     text-decoration: none;
 }
-.buttons
+main .buttons
 {
     display: flex;
     flex-direction: column;
@@ -108,7 +107,7 @@ body
     justify-content: center;
     width: 100%;
 }
-.buttons .button-proceed
+main .buttons .button-proceed
 {
     cursor: pointer;
     background-color: hsl(245, 75%, 52%);
@@ -122,11 +121,11 @@ body
     box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.2);
     transition: background 0.3s;
 }
-.buttons .button-proceed:hover
+main .buttons .button-proceed:hover
 {
     background-color: #766cf1;
 }
-.buttons .button-cancel
+main .buttons .button-cancel
 {
     text-decoration: none;
     font-weight: 900;
@@ -135,11 +134,11 @@ body
     margin-bottom: 2.5rem;
     transition: color 0.3s;
 }
-.buttons .button-cancel:hover
+main .buttons .button-cancel:hover
 {
     color: hsl(223, 47%, 23%);
 }
-.music-prices .prices p
+main .music-prices .prices p
 {
     font-weight: 900;
 }
@@ -153,7 +152,7 @@ body
   }
   
   @media screen and (max-width: 980px) {
-    .card-content {
+    main .card-content {
       padding: 0 3rem;
     }
   }
